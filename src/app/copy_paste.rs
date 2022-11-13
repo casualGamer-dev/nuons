@@ -24,7 +24,7 @@
 use gtk::{Clipboard, traits::WidgetExt};
 use webkit2gtk::WebViewExt;
 
-use titanium_common::FollowMode;
+use nuon_common::FollowMode;
 
 use super::App;
 

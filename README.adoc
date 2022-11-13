@@ -1,20 +1,20 @@
-= Titanium Web Browser
+= nuon Web Browser
 
 A keyboard-driven web browser written in Rust
 
-//image:https://img.shields.io/crates/v/titanium.svg[link="https://crates.io/crates/titanium"]
-//image:https://img.shields.io/crates/d/titanium.svg[link="https://crates.io/crates/titanium"]
-image:https://img.shields.io/crates/l/titanium.svg[link="LICENSE"]
+//image:https://img.shields.io/crates/v/nuon.svg[link="https://crates.io/crates/nuon"]
+//image:https://img.shields.io/crates/d/nuon.svg[link="https://crates.io/crates/nuon"]
+image:https://img.shields.io/crates/l/nuon.svg[link="LICENSE"]
 image:https://img.shields.io/badge/Donate-Patreon-orange.svg[link="https://www.patreon.com/antoyo"]
 
-Titanium is written in Rust and uses WebKit2GTK to render web pages.
+nuon is written in Rust and uses WebKit2GTK to render web pages.
 
 It is inspired on Vimperator and qutebrowser.py.
 
 == Screenshots
 
-image:doc/screenshots/titanium.png[Titanium,300,link="doc/screenshots/titanium.png"]
-image:doc/screenshots/titanium-follow-links.png[Titanium-Follow-Links,300,link="doc/screenshots/titanium-follow-links.png"]
+image:doc/screenshots/nuon.png[nuon,300,link="doc/screenshots/nuon.png"]
+image:doc/screenshots/nuon-follow-links.png[nuon-Follow-Links,300,link="doc/screenshots/nuon-follow-links.png"]
 
 == Features
 
@@ -33,26 +33,26 @@ image:doc/screenshots/titanium-follow-links.png[Titanium-Follow-Links,300,link="
 [source, bash]
 ----
 cargo build
-cd titanium-web-extension
+cd nuon-web-extension
 cargo build
 ----
 
 if you have issues compiling due to requiring an environment variable, set it to the web extension path
 
-== Installing Titanium
+== Installing nuon
 
-Set the `TITANIUM_EXTENSION_INSTALL_PATH` environment variable and compile in release mode.
+Set the `nuon_EXTENSION_INSTALL_PATH` environment variable and compile in release mode.
 Then copy the executable and the library in `/usr/local`.
 
 [source, bash]
 ----
-sudo mkdir -p /usr/local/lib/titanium/web-extensions
-export TITANIUM_EXTENSION_INSTALL_PATH=/usr/local/lib/titanium/web-extensions
+sudo mkdir -p /usr/local/lib/nuon/web-extensions
+export nuon_EXTENSION_INSTALL_PATH=/usr/local/lib/nuon/web-extensions
 cargo build --release
-sudo cp target/release/titanium /usr/local/bin
-cd titanium-web-extension
+sudo cp target/release/nuon /usr/local/bin
+cd nuon-web-extension
 cargo build --release
-sudo cp target/release/libtitanium_web_extension.so /usr/local/lib/titanium/web-extensions/
+sudo cp target/release/libnuon_web_extension.so /usr/local/lib/nuon/web-extensions/
 ----
 
 == Donations

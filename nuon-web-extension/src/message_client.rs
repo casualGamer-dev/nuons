@@ -35,7 +35,7 @@ use webkit2gtk_webextension::{
     WebPage,
 };
 
-use titanium_common::protocol::decode;
+use nuon_common::protocol::decode;
 
 use adblocker::Adblocker;
 use executor::{self, Executor};

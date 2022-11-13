@@ -96,10 +96,10 @@
  *
  * TODO: settings containing a list of websites that automatically open in private mode?
  *
- * FIXME: If titanium was opened by xdg-open (by e.g. zathura), the abstract domain socket can live
- * longer than what we want, preventing a new titanium from starting.
- * ~ ss -apx | rg titanium
- * u_str  LISTEN     11     128    @titanium-server 38583                 * 0
+ * FIXME: If nuon was opened by xdg-open (by e.g. zathura), the abstract domain socket can live
+ * longer than what we want, preventing a new nuon from starting.
+ * ~ ss -apx | rg nuon
+ * u_str  LISTEN     11     128    @nuon-server 38583                 * 0
  * +users:(("zathura",pid=7755,fd=11),("xdg-open",pid=7637,fd=11))
  *
  * FIXME: cannot open html with from file:// url.
@@ -357,7 +357,7 @@
  * TODO: create a whitelist-based adblocker.
  * TODO: hide the hints when activating a hint.
  * TODO: do not hard-code the extension directory: use the one provided by cargo.
- * TODO: find a way to install the titanium web extension library on cargo install.
+ * TODO: find a way to install the nuon web extension library on cargo install.
  * TODO: activate insert mode after focusing a text element (disable insert mode when focus is lost).
  * TODO: block coin miner (take blacklist from https://github.com/keraf/NoCoin).
  * TODO: add a validator for the file input (browse): check that a file is selected (and not a
@@ -368,7 +368,7 @@
  * TODO: add tests.
  */
 
-//! Titanium is a webkit2 keyboard-driven web browser.
+//! nuon is a webkit2 keyboard-driven web browser.
 
 #![allow(deprecated)]
 #![warn(
@@ -407,7 +407,7 @@ extern crate rusqlite;
 extern crate simplelog;
 extern crate syslog;
 extern crate tempfile;
-extern crate titanium_common;
+extern crate nuon_common;
 extern crate url;
 extern crate webkit2gtk;
 extern crate xdg;
@@ -450,10 +450,10 @@ const INVALID_UTF8_ERROR: &str = "invalid utf-8 string";
 
 /// The GTK app name.
 #[cfg(not(debug_assertions))]
-pub const GTK_APP_NAME: &str = "com.titanium-browser";
+pub const GTK_APP_NAME: &str = "com.nuon-browser";
 /// A different GTK app name is used in debug mode for easier debugging.
 #[cfg(debug_assertions)]
-pub const GTK_APP_NAME: &str = "com.titanium-browser.debug";
+pub const GTK_APP_NAME: &str = "com.nuon-browser.debug";
 
 #[derive(Debug, Default, Options)]
 struct Args {

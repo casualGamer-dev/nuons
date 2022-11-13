@@ -19,7 +19,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-//! Web extension for the titanium web browser.
+//! Web extension for the nuon web browser.
 //! It provides an ad blocker, scrolling support, hints, navigation and login credentials load/save.
 
 #![allow(deprecated)]
@@ -43,7 +43,7 @@ extern crate relm;
 #[macro_use]
 extern crate relm_derive;
 extern crate send_cell;
-extern crate titanium_common;
+extern crate nuon_common;
 extern crate xdg;
 extern crate webkit2gtk_webextension;
 
@@ -156,7 +156,7 @@ use message_client::Msg::PageCreated;
 web_extension_init!();
 
 #[doc(hidden)]
-pub const APP_NAME: &'static str = "titanium";
+pub const APP_NAME: &'static str = "nuon";
 
 /// Initialize the the logger and the message server.
 pub fn web_extension_initialize(extension: &WebExtension) {

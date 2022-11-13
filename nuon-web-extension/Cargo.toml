@@ -1,9 +1,9 @@
 [package]
 authors = ["Antoni Boucher <bouanto@zoho.com>"]
-description = "Web extension for the web titanium"
+description = "Web extension for the web nuon"
 license = "MIT"
-name = "titanium-web-extension"
-repository = "https://github.com/antoyo/titanium"
+name = "nuon-web-extension"
+repository = "https://github.com/antoyo/nuon"
 version = "0.1.0"
 
 [dependencies]
@@ -21,8 +21,8 @@ webkit2gtk-webextension = "^0.15.2"
 webkit2gtk-webextension-sys = "^0.15.0"
 xdg = "^2.0"
 
-[dependencies.titanium-common]
-path = "../titanium-common"
+[dependencies.nuon-common]
+path = "../nuon-common"
 version = "0.1.0"
 
 [features]

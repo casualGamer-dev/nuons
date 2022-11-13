@@ -21,11 +21,11 @@
 
 use gio::Cancellable;
 use glib::ToVariant;
-use titanium_common::protocol::encode;
+use nuon_common::protocol::encode;
 use webkit2gtk::{WebViewExt, UserMessage};
 
-use titanium_common::InnerMessage;
-use titanium_common::InnerMessage::*;
+use nuon_common::InnerMessage;
+use nuon_common::InnerMessage::*;
 
 use super::App;
 

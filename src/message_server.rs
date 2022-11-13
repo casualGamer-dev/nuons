@@ -66,7 +66,7 @@ pub struct Model {
     app_count: usize,
     application: Application,
     config_dir: ConfigDir,
-    /// This listener is used to prevent two instances of Titanium to run at the same time.
+    /// This listener is used to prevent two instances of nuon to run at the same time.
     private_web_context: WebContext,
     opened_urls: BTreeSet<String>,
     previous_opened_urls: BTreeSet<String>,

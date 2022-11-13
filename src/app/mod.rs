@@ -82,7 +82,7 @@ use mg::{
 };
 use relm::{Relm, Widget};
 use relm_derive::widget;
-use titanium_common::protocol::decode;
+use nuon_common::protocol::decode;
 use webkit2gtk::{
     self,
     Download,
@@ -102,8 +102,8 @@ use webkit2gtk::{
 use webkit2gtk::LoadEvent::{self, Started};
 use webkit2gtk::NavigationType::Other;
 
-use titanium_common::{FollowMode, InnerMessage, LAST_MARK};
-use titanium_common::Percentage::{self, All, Percent};
+use nuon_common::{FollowMode, InnerMessage, LAST_MARK};
+use nuon_common::Percentage::{self, All, Percent};
 
 use bookmarks::BookmarkManager;
 use commands::AppCommand;

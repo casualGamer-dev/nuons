@@ -1,10 +1,9 @@
 [package]
-authors = ["Antoni Boucher <bouanto@zoho.com>"]
+authors = ["Toivi"]
 categories = ["gui"]
 description = "Keyboard-driven web browser"
 license = "MIT"
-name = "titanium"
-repository = "https://github.com/antoyo/titanium"
+name = "nuon"
 version = "0.1.1"
 
 [dependencies]
@@ -39,8 +38,8 @@ gio-sys = "^0.15.0"
 glib-sys = "^0.15.0"
 gobject-sys = "^0.15.0"
 
-[dependencies.titanium-common]
-path = "titanium-common"
+[dependencies.nuon-common]
+path = "nuon-common"
 version = "^0.1"
 
 [dev-dependencies]

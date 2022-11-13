@@ -21,7 +21,7 @@
 
 use webkit2gtk::WebViewExt;
 
-use titanium_common::FollowMode;
+use nuon_common::FollowMode;
 
 use app::App;
 use app::Msg::CreateWindow;

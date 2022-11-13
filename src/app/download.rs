@@ -150,7 +150,7 @@ impl App {
         let stream = stream.clone();
         let list_stream = list_stream.clone();
         download.connect_decide_destination(move |download, suggested_filename| {
-            // If the destination is already set, the download is originating from titanium, so the
+            // If the destination is already set, the download is originating from nuon, so the
             // user must not choose it.
             if download.destination().is_none() {
                 // Some suggested file name are actually a path, so only take the last part of it.

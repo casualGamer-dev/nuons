@@ -49,7 +49,7 @@ use dom::{
     show,
 };
 
-pub const HINTS_ID: &'static str = "__titanium_hints";
+pub const HINTS_ID: &'static str = "__nuon_hints";
 
 pub struct Hints {
     hints: HashMap<String, DOMElement>,
@@ -120,8 +120,8 @@ impl Hints {
 
 fn create_hint(document: &DOMDocument, pos: &Pos, hint_text: &str) -> Option<DOMElement> {
     document.create_element("div").ok().and_then(|hint| {
-        hint.set_class_name("__titanium_hint");
-        hint.set_id(&format!("__titanium_hint_{}", hint_text));
+        hint.set_class_name("__nuon_hint");
+        hint.set_id(&format!("__nuon_hint_{}", hint_text));
         let style = wtry_opt!(hint.style());
         check_err_opt!(style.set_property("position", "absolute", "").ok());
         check_err_opt!(style.set_property("left", &format!("{}px", pos.x), "").ok());
@@ -225,20 +225,20 @@ fn get_input_elements(document: &DOMDocument) -> Vec<DOMElement> {
 /// Hide the hints that does not start with `hint_keys`.
 pub fn hide_unrelevant_hints(document: &DOMDocument, hint_keys: &str) -> bool {
     let hints_to_hide = document.query_selector_all(
-        &format!(".__titanium_hint:not([id^=\"__titanium_hint_{}\"])", hint_keys))
+        &format!(".__nuon_hint:not([id^=\"__nuon_hint_{}\"])", hint_keys))
         .ok();
     let hints_len = hints_to_hide.as_ref().map(|hints| hints.length()).unwrap_or(0);
     let hints = NodeIter::new(hints_to_hide);
     for hint in hints {
         hide(&hint);
     }
-    let all_hints = unwrap_or_ret!(document.query_selector_all(".__titanium_hint"), false);
+    let all_hints = unwrap_or_ret!(document.query_selector_all(".__nuon_hint"), false);
     all_hints.length() == hints_len
 }
 
 /// Show all hints.
 pub fn show_all_hints(document: &DOMDocument) {
-    let hints = NodeIter::new(document.query_selector_all(".__titanium_hint").ok());
+    let hints = NodeIter::new(document.query_selector_all(".__nuon_hint").ok());
     for hint in hints {
         show(&hint);
     }

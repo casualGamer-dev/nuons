@@ -1479,7 +1479,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
 
 [[package]]
-name = "titanium"
+name = "nuon"
 version = "0.1.1"
 dependencies = [
  "cairo-rs",
@@ -1507,7 +1507,7 @@ dependencies = [
  "simplelog",
  "syslog",
  "tempfile",
- "titanium-common",
+ "nuon-common",
  "url",
  "webkit2gtk",
  "xdg",
@@ -1515,7 +1515,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "titanium-common"
+name = "nuon-common"
 version = "0.1.0"
 dependencies = [
  "gio",

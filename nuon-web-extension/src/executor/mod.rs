@@ -63,8 +63,8 @@ use webkit2gtk_webextension::{
     WebPage,
 };
 
-use titanium_common::{FollowMode, InnerMessage, protocol::encode};
-use titanium_common::Action::{
+use nuon_common::{FollowMode, InnerMessage, protocol::encode};
+use nuon_common::Action::{
     self,
     CopyLink,
     DownloadLink,
@@ -72,7 +72,7 @@ use titanium_common::Action::{
     GoInInsertMode,
     NoAction,
 };
-use titanium_common::InnerMessage::*;
+use nuon_common::InnerMessage::*;
 
 use dom::{
     get_body,

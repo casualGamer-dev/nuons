@@ -19,7 +19,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-use titanium_common::InnerMessage::{
+use nuon_common::InnerMessage::{
     GetCredentials,
     InsertText,
     LoadUsernamePass,
@@ -125,7 +125,7 @@ mod tests {
     fn fill_login_form() {
         gtk::init().unwrap();
 
-        let path = "/tmp/titanium_test";
+        let path = "/tmp/nuon_test";
         let temp_dir = TempFileBuilder::new().tempdir_in(path).unwrap();
 
         let dir = env::current_dir().unwrap();

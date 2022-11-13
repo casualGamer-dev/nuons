@@ -33,8 +33,8 @@ use webkit2gtk_webextension::{
     WebPage,
 };
 
-use titanium_common::LAST_MARK;
-use titanium_common::Percentage::{self, All, Percent};
+use nuon_common::LAST_MARK;
+use nuon_common::Percentage::{self, All, Percent};
 
 use dom::{ElementIter, get_body, get_document};
 use executor::Executor;

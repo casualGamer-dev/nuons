@@ -110,7 +110,7 @@ pub enum InnerMessage {
     /// Add a new mark at the current position.
     Mark(u8),
     /// Open the given URL.
-    /// This is used when starting a new titanium process to tell the existing process to open a
+    /// This is used when starting a new nuon process to tell the existing process to open a
     /// new window.
     Open(Vec<String>),
     /// Reset the marks.

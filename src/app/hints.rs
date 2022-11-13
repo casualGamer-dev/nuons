@@ -25,7 +25,7 @@ use gdk::EventKey;
 
 use super::App;
 
-use titanium_common::Action::{
+use nuon_common::Action::{
     self,
     CopyLink,
     DownloadLink,

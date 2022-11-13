@@ -19,7 +19,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-use titanium_common::Percentage::{All, Percent};
+use nuon_common::Percentage::{All, Percent};
 
 use executor::Executor;
 
